@@ -1,0 +1,19 @@
+import java.util.*;
+public class PredecessorSuccessorBST{
+    public static void PredSucc(Node root, int key){
+        if(root == null) return;
+
+        if(root.data < key){
+            pred = root;
+            PredSucc(root.right, key);
+        }
+        else if(root.data > key){
+            succ = root;
+            PredSucc(root.left, key);
+        }
+        else{
+            PredSucc(root.left, key);
+            PredSucc(root.right, key);
+        }
+    }
+}

@@ -10,6 +10,6 @@ class Solution{
         root = root.left;
       }
     }
-    return root;
+    return successor;
   }
 }

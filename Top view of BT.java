@@ -23,7 +23,7 @@ class Node{
     }
 }
 */
-class Pair<U, V> {
+class Pair {
     Node node;
     int line;
     
